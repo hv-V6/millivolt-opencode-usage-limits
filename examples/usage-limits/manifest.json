@@ -1,0 +1,20 @@
+{
+  "id": "opencode-usage-limits",
+  "version": "0.7.0",
+  "abi": "v1",
+  "min_millivolt": "0.3.26",
+  "capabilities": [
+    "log",
+    "emit_metric",
+    "read:records",
+    "read:config",
+    "declare_tool",
+    "declare_ui_panel",
+    "http:fetch"
+  ],
+  "module": "module.wasm",
+  "module_sha256": "1263112c22f6b89b0896556f64cf6e9c2bf4b847920a05c1f7c4f006e1872beb",
+  "license": "MIT",
+  "signer": "release",
+  "signature": "8749dc00f7aa2b2104dcb942deffdacceeca9960ed96a19ed456b6423ac519320b84733e0b56c5c6b4a792b7285d0a47ac449f0495f4203af5958afd7f1a2301"
+}
