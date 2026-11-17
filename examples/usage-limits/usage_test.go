@@ -106,13 +106,16 @@ func TestUsesAllSixCapabilities(t *testing.T) {
 		t.Fatalf("tools = %+v", host.Tools())
 	}
 	panel := host.Panels()[len(host.Panels())-1]
-	for _, key := range []string{"provider", "requests", "models", "input_tokens", "output_tokens", "cost", "rate_limited", "remaining", "config_schema", "config_values"} {
+	for _, key := range []string{"provider", "requests", "models", "input_tokens", "output_tokens", "cost", "rate_limited", "remaining", "config_schema", "config_values", "plugin_version"} {
 		if _, ok := panel.Data[key]; !ok {
 			t.Fatalf("panel data missing %q: %+v", key, panel.Data)
 		}
 	}
 	if panel.Data["config_schema"] != "3" || panel.Data["config_values"] != "1" {
 		t.Fatalf("config values not reported: %+v", panel.Data)
+	}
+	if panel.Data["plugin_version"] != PluginVersion {
+		t.Fatalf("plugin version = %q, want %q", panel.Data["plugin_version"], PluginVersion)
 	}
 }
 

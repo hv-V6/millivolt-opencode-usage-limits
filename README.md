@@ -9,7 +9,7 @@ publish rolling/weekly/monthly quota into Millivolt's dashboard.
 In Millivolt Settings → Plugins, paste:
 
 ```text
-github:hv-V6/millivolt-opencode-usage-limits@v0.7.0
+github:hv-V6/millivolt-opencode-usage-limits@v0.7.1
 ```
 
 or:
@@ -18,14 +18,14 @@ or:
 github:hv-V6/millivolt-opencode-usage-limits@latest
 ```
 
-`plugin_downloads_enabled` must be true and the proxy must trust the `release`
-signer in [dist/trust.json](dist/trust.json). Installation requires a restart;
+`plugin_downloads_enabled` must be true and the proxy must trust the signer
+listed in [dist/trust.json](dist/trust.json). Installation requires a restart;
 after restart, send one OpenCode Go request through the proxy to populate the
 quota descriptor.
 
 ## Package
 
-- Release asset: `opencode-usage-limits-0.7.0.mvplugin`
+- Release asset: `opencode-usage-limits-0.7.1.mvplugin`
 - Capabilities: `log`, `emit_metric`, `read:records`, `read:config`,
   `declare_tool`, `declare_ui_panel`, `http:fetch`
 - ABI: v1

@@ -1,6 +1,6 @@
 {
   "id": "opencode-usage-limits",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "abi": "v1",
   "min_millivolt": "0.3.26",
   "capabilities": [
@@ -13,8 +13,8 @@
     "http:fetch"
   ],
   "module": "module.wasm",
-  "module_sha256": "1263112c22f6b89b0896556f64cf6e9c2bf4b847920a05c1f7c4f006e1872beb",
+  "module_sha256": "d9ccaef62bb470697fe4491c2012514f938028d64f06a80c09c7c6a1866277f4",
   "license": "MIT",
-  "signer": "release",
-  "signature": "8749dc00f7aa2b2104dcb942deffdacceeca9960ed96a19ed456b6423ac519320b84733e0b56c5c6b4a792b7285d0a47ac449f0495f4203af5958afd7f1a2301"
+  "signer": "dashboard-dev",
+  "signature": "35ff28940c936c0033594714bb29f7a7e40142619b6ae500ab871a0f8822319b629b9eeccdc46d2e27b4001e15fdee25b6b14a140ef55732f4d207f25b294c06"
 }

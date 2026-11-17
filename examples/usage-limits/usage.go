@@ -15,6 +15,7 @@ import (
 )
 
 const (
+	PluginVersion         = "0.7.1"
 	maxModels             = 64
 	PanelID               = "opencode-usage-limits"
 	ToolName              = "opencode_usage_summary"
@@ -364,6 +365,7 @@ func (p *Plugin) PanelData() map[string]string {
 		"output_tokens":  fmt.Sprintf("%d", output),
 		"cost":           fmt.Sprintf("%.6f", cost),
 		"rate_limited":   fmt.Sprintf("%d", limited),
+		"plugin_version": PluginVersion,
 		"remaining":      fmt.Sprintf("%d", remaining),
 		"last_model":     p.lastModel,
 		"last_status":    status,

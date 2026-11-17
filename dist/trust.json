@@ -1,1 +1,1 @@
-{"keys":[{"ed25519_public":"e3ae461815c15e1bbd4227195dd33a633ada5723de3d68dfadb0a2a279134b5a","id":"release"}]}
+{"keys":[{"id":"release","ed25519_public":"e3ae461815c15e1bbd4227195dd33a633ada5723de3d68dfadb0a2a279134b5a"},{"id":"dashboard-dev","ed25519_public":"4d76c452225d54696833d09faab0f9106ef6aecf2cc6a21d030ac10bcd89b1c1"}]}

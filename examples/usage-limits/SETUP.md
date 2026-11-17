@@ -31,7 +31,7 @@ plugin_http_allow_hosts:
 Install the signed package:
 
 ```sh
-/admin/plugins/install   # upload opencode-usage-limits-0.7.0.mvplugin
+/admin/plugins/install   # upload opencode-usage-limits-0.7.1.mvplugin
 ```
 
 Then restart Millivolt so the allowlist and plugin are active.
